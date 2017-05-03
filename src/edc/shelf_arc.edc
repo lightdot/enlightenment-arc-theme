@@ -1,5 +1,5 @@
 group { name: "e/shelf/default/base"; nomouse;
-
+   alias: "e/bryce/default/base";
    data {
       /* this tells e the shelf is shaped, not rectangular */
 //      item: "shaped" "1";
@@ -122,6 +122,9 @@ group { name: "e/shelf/default/inset"; nomouse;
    alias: "e/shelf/darker/inset";
    alias: "e/shelf/invisible/inset";
    alias: "e/shelf/translucent/inset";
+   alias: "e/bryce/default/inset";
+   alias: "e/bryce/invisible/inset";
+   alias: "e/bryce/translucent/inset";
    parts {
       rect { "mouse"; mouse;
          desc { color: 0 0 0 0; }
@@ -196,6 +199,7 @@ group { name: "e/shelf/default/inset"; nomouse;
             // target: "inset"; \
 
 group { name: "e/shelf/invisible/base"; nomouse;
+   alias: "e/bryce/invisible/base";
    inherit: "e/shelf/default/base";
    data {
       item: "shaped" "1";
@@ -219,6 +223,7 @@ group { name: "e/shelf/invisible/base"; nomouse;
 }
 
 group { name: "e/shelf/translucent/base"; nomouse;
+   alias: "e/bryce/translucent/base";
    inherit: "e/shelf/default/base";
    data {
       item: "shaped" "1";
@@ -231,6 +236,7 @@ group { name: "e/shelf/translucent/base"; nomouse;
          }
          description { state: "vert" 0.0;
             inherit: "default" 0.0;
+            color_class: "shelf_base_translucent";
          }
       }
       part { name: "border"; type: RECT;
@@ -250,6 +256,8 @@ group { name: "e/shelf/default/plain"; nomouse;
    alias: "e/shelf/alternate/plain";
    alias: "e/shelf/invisible/plain";
    alias: "e/shelf/translucent/plain";
+   alias: "e/bryce/invisible/plain";
+   alias: "e/bryce/translucent/plain";
    parts {
       rect { "mouse"; mouse;
          desc { color: 0 0 0 0; }
@@ -285,5 +293,23 @@ group { name: "e/shelf/default/plain"; nomouse;
       rect { "events"; repeat; mouse;
          desc { color: 0 0 0 0; }
       }
+   }
+}
+
+group { "elm/scroller/base/bryce";
+   parts {
+      rect { "clip";
+         desc {
+            rel1.offset: 0 -99999;
+            rel2.offset: -1 99999;
+            link.base: "e,state,orient,horizontal" "e";
+         }
+         desc { "vert";
+            rel1.offset: -99999 0;
+            rel2.offset: 99999 -1;
+            link.base: "e,state,orient,vertical" "e";
+         }
+      }
+      swallow { "elm.swallow.content" clip: "clip"; }
    }
 }
