@@ -1,0 +1,29 @@
+group {
+   name: "e/gadget/batman/main";
+   inherit: "e/modules/battery/main";
+   alias: "e/gadget/batman/main_vert";
+}
+
+group {
+   name: "e/gadget/thermal/main";
+   inherit: "e/modules/temperature/main";
+   alias: "e/gadget/thermal/main_vert";
+}
+
+group {
+   name: "e/gadget/cpuclock/main";
+   inherit: "e/modules/cpufreq/main";
+   alias: "e/gadget/cpuclock/main_vert";
+}
+
+group {
+   name: "e/gadget/backlight/main";
+   inherit: "e/modules/backlight/main";
+   alias: "e/gadget/backlight/main_vert";
+}
+
+group {
+   name: "e/gadget/mixer/main";
+   inherit: "e/modules/mixer/main";
+   alias: "e/gadget/mixer/main_vert";
+}
