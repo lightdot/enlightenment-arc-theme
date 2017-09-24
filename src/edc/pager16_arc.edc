@@ -1,4 +1,5 @@
 group { name: "e/modules/pager16/popup";
+   alias: "e/gadget/pager/popup";
    images.image: "bg-rounded-3px@4.png" COMP;
    images.image: "border-rounded-3px@4.png" COMP;
    parts {
@@ -55,6 +56,7 @@ group { name: "e/modules/pager16/popup";
 }
 
 group { name: "e/modules/pager16/desk";
+   alias: "e/gadget/pager/default/desk"
    images.image: "inset_shadow.png" COMP;
    images.image: "downlight_glow_white_arc.png" COMP;
    images.image: "border-rounded-1px@4.png" COMP;
@@ -89,6 +91,18 @@ group { name: "e/modules/pager16/desk";
          description { state: "default" 0.0;
             rel1.to: "base";
             rel2.to: "base";
+         }
+      }
+      part { name: "e.swallow.drop"; type: SWALLOW;
+         clip_to: "clip";
+         description { state: "default" 0.0;
+            rel1.to: "base";
+            rel2.to: "base";
+            rel2.offset: -2 -1;
+            link.base: "e,state,visible" "e";
+         }
+         desc { "hid"; inherit; hid;
+            link.base: "e,state,hidden" "e";
          }
       }
       part { name: "e.swallow.content"; type: SWALLOW;
