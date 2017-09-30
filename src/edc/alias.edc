@@ -27,3 +27,35 @@ group {
    inherit: "e/modules/mixer/main";
    alias: "e/gadget/mixer/main_vert";
 }
+
+group {
+   name: "e/gadget/xkbswitch/main";
+   inherit: "e/modules/xkbswitch/main";
+   alias: "e/gadget/xkbswitch/main_vert";
+}
+
+group {
+   name: "e/gadget/clock/digital";
+   inherit: "e/modules/clock/digital";
+}
+
+group {
+   name: "e/gadget/clock/analog";
+   inherit: "e/modules/clock/analog";
+}
+
+group {
+   name: "e/gadget/clock/calendar/dayname";
+   inherit: "e/modules/clock/calendar/dayname";
+}
+
+group {
+   name: "e/gadget/clock/calendar/day";
+   inherit: "e/modules/clock/calendar/day";
+}
+
+group {
+   name: "e/gadget/clock/calendar";
+   inherit: "e/modules/clock/calendar";
+}
+
