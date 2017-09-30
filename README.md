@@ -7,7 +7,7 @@ Original E theme by LeBlue, modified by Okra.
 
 ### Install
 
-To install just save [arc-dark.edj](https://github.com/okratitan/enlightenment-arc-theme/blob/master/arc-dark.edj) and/or [arc.edj](https://github.com/okratitan/enlightenment-arc-theme/blob/master/arc.edj) to the themes directory `$HOME/.elementary/themes/` or `make install`.
+To install just save [arc-dark.edj](https://raw.githubusercontent.com/okratitan/enlightenment-arc-theme/master/arc-dark.edj) and/or [arc.edj](https://raw.githubusercontent.com/okratitan/enlightenment-arc-theme/master/arc.edj) to the themes directory `$HOME/.elementary/themes/` or `make install`.
 
 ### Building
 
