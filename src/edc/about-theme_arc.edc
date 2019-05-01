@@ -97,7 +97,7 @@ group { name: "e/theme/about";
             rel2.to: "orig-arc-theme";
             text {  style: "about-theme-style";
                min: 0 1;
-               text: "contributors: LeBlue, leiflm (T_UNIX)";
+               text: "contributors: LeBlue, leiflm (T_UNIX), okratitan, LightDot";
                ellipsis: -1;
                align: 0.5 0.5;
             }
