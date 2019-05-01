@@ -1,24 +1,27 @@
-# Arc theme for enlightenment
-Original arc design from [horst3180](https://github.com/horst3180/arc-theme). There are still widgets and e-modules missing, an overview is shown below. For now Arc-Dark theme is available. Just started on coloring Arc theme.
+# Arc theme for Enlightenment
+Original arc design from [horst3180](https://github.com/horst3180/arc-theme), Enlightenment theme by [LeBlue](https://github.com/LeBlue/enlightenment-arc-theme), modified by [Okra](https://github.com/okratitan/enlightenment-arc-theme), [LightDot](https://github.com/lightdot/enlightenment-arc-theme) and others.
 
-Original E theme by LeBlue, modified by Okra.
+There are still widgets and e-modules missing, an overview is shown below.
 
-![A screenshot of the Arc-Darker theme](https://github.com/LeBlue/enlightenment-arc-theme/blob/master/screenshots/shot.png)
+
+![A screenshot of the Arc-Darker theme](https://github.com/lightdot/enlightenment-arc-theme/blob/master/screenshots/shot.png)
 
 ### Install
 
-To install just save [arc-dark.edj](https://raw.githubusercontent.com/okratitan/enlightenment-arc-theme/master/arc-dark.edj) and/or [arc.edj](https://raw.githubusercontent.com/okratitan/enlightenment-arc-theme/master/arc.edj) to the themes directory `$HOME/.elementary/themes/` or `make install`.
+To install just save the latest [arc-dark.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/arc-dark.edj) and/or [arc.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/arc.edj) to the themes directory `$HOME/.elementary/themes/` of a user or, to install system-wide, run `make install` after building the theme.
 
 ### Building
 
 To build the arc themes you need will need
 * `edje_cc`
-* `git` for a clone of `efl`
 * `make`
 
-the source of the default e-theme to fill not yet implemented widgets/modules under the orig-theme directory. Link to your own efl clone `ln -s /path/to/efl-clone/data/elementary/themes orig-theme`. To build:
+To build:
 
-`make`
+```
+make orig-theme
+make
+```
 
 ### Rebuilding or adding assets
 

@@ -16,7 +16,7 @@ arc-darker:
 	make -C $(SRC_DIR) ../arc-darker.edj
 
 orig-theme:
-	ln -s ../efl/data/elementary/themes orig-theme
+	ln -s efl/data/elementary/themes orig-theme
 
 assets:
 	make -C assets all
