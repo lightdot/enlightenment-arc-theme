@@ -8,9 +8,13 @@ There are still widgets and e-modules missing, an overview is shown below.
 
 ### Install
 
-To install just save the latest [arc-dark.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/arc-dark.edj) and/or [arc.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/arc.edj) to the themes directory `$HOME/.elementary/themes/` of a user or, to install system-wide, run `make install` after building the theme.
+To install just save the latest [arc-dark.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/download/arc-dark.edj) and/or [arc.edj](https://github.com/lightdot/enlightenment-arc-theme/releases/latest/download/arc.edj) to the themes directory `$HOME/.elementary/themes/` of a user or, to install system-wide, run `make install` after building the theme from the source.
 
-### Building
+#### Installing on Arch Linux
+
+Packages for Arch Linux are [available in AUR](https://aur.archlinux.org/packages/?K=enlightenment-arc-theme&do_Search=Go).
+
+### Building from source
 
 To build the arc themes you need will need
 * `edje_cc`
@@ -29,7 +33,7 @@ You will need
 * `inkscape`
 * `optipng`
 
-All assets are already exported as .png and included. inkscape and optipng are used to export the png-assets from the .svg source if you want to add or reexport the images. To reexport type:
+All assets are already exported as .png and included. Inkscape and optipng are used to export the png-assets from the .svg source if you want to add or reexport the images. To reexport type:
 
 `make assets`
 
