@@ -1,0 +1,61 @@
+group {
+   name: "e/gadget/batman/main";
+   inherit: "e/modules/battery/main";
+   alias: "e/gadget/batman/main_vert";
+}
+
+group {
+   name: "e/gadget/thermal/main";
+   inherit: "e/modules/temperature/main";
+   alias: "e/gadget/thermal/main_vert";
+}
+
+group {
+   name: "e/gadget/cpuclock/main";
+   inherit: "e/modules/cpufreq/main";
+   alias: "e/gadget/cpuclock/main_vert";
+}
+
+group {
+   name: "e/gadget/backlight/main";
+   inherit: "e/modules/backlight/main";
+   alias: "e/gadget/backlight/main_vert";
+}
+
+group {
+   name: "e/gadget/mixer/main";
+   inherit: "e/modules/mixer/main";
+   alias: "e/gadget/mixer/main_vert";
+}
+
+group {
+   name: "e/gadget/xkbswitch/main";
+   inherit: "e/modules/xkbswitch/main";
+   alias: "e/gadget/xkbswitch/main_vert";
+}
+
+group {
+   name: "e/gadget/clock/digital";
+   inherit: "e/modules/clock/digital";
+}
+
+group {
+   name: "e/gadget/clock/analog";
+   inherit: "e/modules/clock/analog";
+}
+
+group {
+   name: "e/gadget/clock/calendar/dayname";
+   inherit: "e/modules/clock/calendar/dayname";
+}
+
+group {
+   name: "e/gadget/clock/calendar/day";
+   inherit: "e/modules/clock/calendar/day";
+}
+
+group {
+   name: "e/gadget/clock/calendar";
+   inherit: "e/modules/clock/calendar";
+}
+

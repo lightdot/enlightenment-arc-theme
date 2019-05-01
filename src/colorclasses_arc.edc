@@ -4,6 +4,7 @@
 #define COL_ENABLE                82 148 226 255
 #define COL_PRESSED              207 214 230 255
 #define COL_SELECTED             COL_ENABLE
+#define COL_TRANS                255 255 255 0;
 
 #define COL_LIGHT_NORM           184 186 191 255
 #define COL_LIGHT_HOVER          199 201 205 255
@@ -677,11 +678,11 @@ color_classes {
       desc: "Slider text of a disabled slider widget's label";
    }
    color_class { name: "list_item_base";
-      color: COL_BG;
+      color: COL_TRANS;
       desc: "List item even background";
    }
    color_class { name: "list_item_base_odd";
-      color: COL_BG;
+      color: COL_TRANS;
       desc: "List item odd background";
    }
    color_class { name: "list_item_base_selected";

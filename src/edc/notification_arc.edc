@@ -129,13 +129,14 @@ group { name: "e/modules/notification/main";
          }
       }
       part { name: "notification.textblock.message";
-         scale: 1;
+         scale: 0;
          clip_to: "clip";
          type: TEXTBLOCK;
          mouse_events: 0;
          clip_to: "bodyclip";
          description { state: "default" 0.0;
             align: 0.0 0.0;
+            min: 260 40;
             rel1.to_x: "notification.swallow.app_icon";
             rel1.to_y: "notification.text.title";
             rel1.relative: 1.0 1.0;
@@ -147,30 +148,6 @@ group { name: "e/modules/notification/main";
                style: "notification_style";
                min: 0 1;
             }
-            fixed: 1 1;
-         }
-      }
-      part { name: "message";
-         scale: 1;
-         // clip_to: "clip";
-         type: TEXTBLOCK;
-         mouse_events: 0;
-         description { state: "default" 0.0;
-            align: 0.0 0.0;
-            max: 500 99999;
-            rel1.to_x: "notification.swallow.app_icon";
-            rel1.to_y: "notification.text.title";
-            rel1.relative: 1.0 1.0;
-            rel1.offset: 4 4;
-            rel2.offset: -27 -11;
-            color_class: "popup_text";
-            text {
-               style: "notification_style_nowrap";
-               text_source: "notification.textblock.message";
-               min: 0 1;
-            }
-            visible: 0;
-            fixed: 1 1;
          }
       }
       part { name: "notification.text.title";
