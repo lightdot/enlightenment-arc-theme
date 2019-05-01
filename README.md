@@ -1,4 +1,5 @@
 # Arc theme for Enlightenment
+
 Original arc design from [horst3180](https://github.com/horst3180/arc-theme), Enlightenment theme by [LeBlue](https://github.com/LeBlue/enlightenment-arc-theme), modified by [Okra](https://github.com/okratitan/enlightenment-arc-theme), [LightDot](https://github.com/lightdot/enlightenment-arc-theme) and others.
 
 There are still widgets and e-modules missing, an overview is shown below.
@@ -16,7 +17,7 @@ Packages for Arch Linux are [available in AUR](https://aur.archlinux.org/package
 
 ### Building from source
 
-To build the arc themes you need will need
+To build the arc themes you will need:
 * `edje_cc`
 * `make`
 
@@ -29,11 +30,11 @@ make
 
 ### Rebuilding or adding assets
 
-You will need
+You will need:
 * `inkscape`
 * `optipng`
 
-All assets are already exported as .png and included. Inkscape and optipng are used to export the png-assets from the .svg source if you want to add or reexport the images. To reexport type:
+All assets are already exported as .png and included. Inkscape and optipng are used to export the .png's from the .svg source if you want to add or reexport the images. To reexport type:
 
 `make assets`
 
